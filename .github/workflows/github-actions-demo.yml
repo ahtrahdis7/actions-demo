@@ -28,7 +28,7 @@ jobs:
           git commit -m "bot update: ${{ steps.date.outputs.date }}" -a
 
       - name: Push changes back to master
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@dev
         with:
           github_token: ${{ secrets.TOKEN_GITHUB }}
           branch: main
